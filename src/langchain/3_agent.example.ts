@@ -10,8 +10,8 @@ import { HumanMessage, AIMessage } from '@langchain/core/messages';
 import { DynamicTool } from 'langchain/tools';
 import { ChatMessageHistory } from 'langchain/stores/message/in_memory';
 import { RunnableWithMessageHistory } from '@langchain/core/runnables';
-import { ToolCallbackHandler } from './callbacks/toolCallbackHandler.js';
-import { StreamCallbackHandler } from './callbacks/streamCallbackHandler.js';
+import { ToolCallbackHandler } from '../callbacks/toolCallbackHandler.js';
+import { StreamCallbackHandler } from '../callbacks/streamCallbackHandler.js';
 
 export async function agentExample() {
   // 1. Create tools that the agent can select to use
